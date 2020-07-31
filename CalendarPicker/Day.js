@@ -194,8 +194,8 @@ export default function Day(props) {
     );
   }
   else {  // dateOutOfRange = true
+    const isToday = thisDay.isSame(today, 'day');
     return (
-      const isToday = thisDay.isSame(today, 'day');
       <View style={isToday ? styles.selectedToday : styles.dayWrapper}>
         <Text style={[textStyle, styles.disabledText, disabledDatesTextStyle]}>
           { day }
