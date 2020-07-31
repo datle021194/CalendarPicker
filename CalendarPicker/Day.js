@@ -195,7 +195,8 @@ export default function Day(props) {
   }
   else {  // dateOutOfRange = true
     return (
-      <View style={styles.dayWrapper}>
+      const isToday = thisDay.isSame(today, 'day');
+      <View style={isToday ? styles.selectedToday : styles.dayWrapper}>
         <Text style={[textStyle, styles.disabledText, disabledDatesTextStyle]}>
           { day }
         </Text>
