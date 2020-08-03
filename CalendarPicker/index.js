@@ -454,6 +454,8 @@ export default class CalendarPicker extends Component {
       nextTitle,
       previousTitleStyle,
       nextTitleStyle,
+      shouldDisableNextMonth,
+      shouldDisablePreviousMonth,
       textStyle,
       restrictMonthNavigation,
       headingLevel,
@@ -526,6 +528,8 @@ export default class CalendarPicker extends Component {
             nextTitle={nextTitle}
             previousTitleStyle={previousTitleStyle}
             nextTitleStyle={nextTitleStyle}
+            shouldDisableNextMonth={shouldDisableNextMonth}
+            shouldDisablePreviousMonth={shouldDisablePreviousMonth}
             textStyle={textStyle}
             restrictMonthNavigation={restrictMonthNavigation}
             minDate={minDate}

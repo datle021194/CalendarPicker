@@ -25,6 +25,8 @@ export default function HeaderControls(props) {
     nextTitle,
     previousTitleStyle,
     nextTitleStyle,
+    shouldDisableNextMonth,
+    shouldDisablePreviousMonth,
     textStyle,
     restrictMonthNavigation,
     maxDate,
@@ -36,8 +38,11 @@ export default function HeaderControls(props) {
   const monthName = MONTHS[currentMonth];
   const year = currentYear;
 
-  const disablePreviousMonth = restrictMonthNavigation && Utils.isSameMonthAndYear(minDate, currentMonth, currentYear);
-  const disableNextMonth = restrictMonthNavigation && Utils.isSameMonthAndYear(maxDate, currentMonth, currentYear);
+  let disablePreviousMonth = shouldDisablePreviousMonth || false
+  disablePreviousMonth = disablePreviousMonth ? disablePreviousMonth : restrictMonthNavigation && Utils.isSameMonthAndYear(minDate, currentMonth, currentYear);
+
+  let disableNextMonth = shouldDisableNextMonth || false
+  disableNextMonth = disableNextMonth ? disableNextMonth : restrictMonthNavigation && Utils.isSameMonthAndYear(maxDate, currentMonth, currentYear);
 
   const accessibilityProps = { accessibilityRole: 'header' };
   if (Platform.OS === 'web') {
