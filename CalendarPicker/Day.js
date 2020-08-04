@@ -175,7 +175,7 @@ export default function Day(props) {
       if (selectedStartDate &&
           !selectedEndDate &&
           isThisDaySameAsSelectedStart) {
-        daySelectedStyle = [styles.startDayWrapper, selectedRangeStyle, selectedRangeStartStyle];
+        daySelectedStyle = [styles.startDayWrapper_single, selectedRangeStyle, selectedRangeStartStyle];
         selectedDayColorStyle = styles.selectedDayLabel;
       }
     }

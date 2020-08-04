@@ -121,6 +121,15 @@ export function makeStyles(params) {
       justifyContent: 'center'
     },
 
+    startDayWrapper_single: {
+      width: 30*scaler,
+      height: 30*scaler,
+      borderRadius: 15*scaler,
+      backgroundColor: SELECTED_BG_COLOR,
+      alignSelf: 'center',
+      justifyContent: 'center'
+    },
+
     endDayWrapper: {
       width: 50*scaler,
       height: 30*scaler,
