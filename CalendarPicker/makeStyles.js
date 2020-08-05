@@ -103,6 +103,15 @@ export function makeStyles(params) {
       justifyContent: 'center'
     },
 
+    disableToday: {
+      justifyContent: 'center',
+      alignItems: 'center',
+      width: 30*scaler,
+      height:30*scaler,
+      borderRadius: getBorderRadiusByShape(scaler, dayShape),
+      backgroundColor: TODAY_BG_COLOR,
+    },
+
     dayWrapper: {
       alignItems: 'center',
       justifyContent: 'center',
