@@ -456,6 +456,8 @@ export default class CalendarPicker extends Component {
       nextTitleStyle,
       shouldDisableNextMonth,
       shouldDisablePreviousMonth,
+      disableMonthSelection = true,
+      disableYearSelection = true,
       textStyle,
       restrictMonthNavigation,
       headingLevel,
@@ -530,6 +532,8 @@ export default class CalendarPicker extends Component {
             nextTitleStyle={nextTitleStyle}
             shouldDisableNextMonth={shouldDisableNextMonth}
             shouldDisablePreviousMonth={shouldDisablePreviousMonth}
+            disableMonthSelection={disableMonthSelection}
+            disableYearSelection={disableYearSelection}
             textStyle={textStyle}
             restrictMonthNavigation={restrictMonthNavigation}
             minDate={minDate}
